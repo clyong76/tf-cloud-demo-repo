@@ -27,7 +27,7 @@ resource "aws_instance" "app_server" {
   availability_zone = "ap-southeast-2a"
 
   tags = {
-    Name = "Webserver"
+    Name = "Webserver2"
   }
 
   lifecycle {
