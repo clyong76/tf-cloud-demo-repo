@@ -21,9 +21,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0ed828ae690ef8b35"
-  instance_type = "t2.micro"
-  subnet_id     = "subnet-082553927b4ae0f60"
+  ami               = "ami-0ed828ae690ef8b35"
+  instance_type     = "t2.micro"
+  subnet_id         = "subnet-0ed908ff7a320e89c"
+  availability_zone = "ap-southeast-2a"
 
   tags = {
     Name = "Webserver"
