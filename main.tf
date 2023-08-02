@@ -17,7 +17,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-southeast-2"
+  region = "ap-southeast-2dsage"
 }
 
 resource "aws_instance" "app_server" {
