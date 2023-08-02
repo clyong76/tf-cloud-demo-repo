@@ -21,8 +21,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0ed828ae690ef8b35"
-  instance_type = "t2.micro"
+  ami                    = "ami-0ed828ae690ef8b35"
+  instance_type          = "t2.micro"
+  vpc_security_group_ids = ["sg-0f7cd79b8b1d5c48f"]
+  subnet_id              = "subnet-041ad9f90a2bdd6cb"
 
   tags = {
     Name = "Webserver"
